@@ -10,7 +10,14 @@
 
 using namespace std;
 
+int imGlobal = 0; // global variable available to the entire file
+const double PI = 3.141; // constant, not changing
+
 int main(int argc, char** argv) {
+    // like in C
+    // argc is number of arguments
+    // argv is an array of pointers to strings
+    // and the main function returns an integer when done
 
 	cout << "Hello World!" << endl; // << is the stream insertion operator
 	// cout is the stream, endl issues a new line and writes to the console
