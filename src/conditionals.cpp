@@ -7,6 +7,7 @@
 #include <numeric> // Import working with sequences of values
 #include <ctime> // Import working with time
 #include <cmath> // Import math functions
+#include "../inc/TestHeader.h"
 
 using namespace std;
 
@@ -34,6 +35,8 @@ int main(int argc, char** argv) {
     bool canIVote = (age18 >= 18) ? true : false;
     cout.setf(ios::boolalpha); // To print true or false instead of 1 or 0
     cout << "John Vote: " << canIVote << endl;
+
+    WaitForInput();
 
     return 0;
 }

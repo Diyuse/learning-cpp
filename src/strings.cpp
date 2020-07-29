@@ -1,12 +1,6 @@
 #include <cstdlib> // Import c standard library
 #include <iostream> // Import read and write data
-#include <string> // Import working with strings
-#include <limits> // Import to get min and max values of datatypes
-#include <vector> // Import vectors
-#include <sstream> // Import string streams
-#include <numeric> // Import working with sequences of values
-#include <ctime> // Import working with time
-#include <cmath> // Import math functions
+#include "../inc/TestHeader.h"
 
 using namespace std;
 
@@ -17,6 +11,8 @@ int main(int argc, char** argv) {
     cin >> num1; // get an input and num1 points to the input
     cout << "Enter Another Number: "; // print the string directly
     cin >> num2;
+
+    // Assuming no errors from input.
     int nNum1 = stoi(num1); // stoi converts string to integer, simiarly stof converts string to float
     int nNum2 = stoi(num2);
 
@@ -26,6 +22,8 @@ int main(int argc, char** argv) {
     printf("%d * %d = %d\n", nNum1, nNum2, (nNum1 * nNum2));
     printf("%d / %d = %d\n", nNum1, nNum2, (nNum1 / nNum2));
     printf("%d %% %d = %d\n", nNum1, nNum2, (nNum1 % nNum2));
+
+    WaitForInput();
 
     return 0;
 }

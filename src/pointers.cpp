@@ -7,6 +7,7 @@
 #include <numeric> // Import working with sequences of values
 #include <ctime> // Import working with time
 #include <cmath> // Import math functions
+#include "../inc/TestHeader.h"
 
 using namespace std;
 
@@ -30,6 +31,8 @@ int main(int argc, char** argv) {
     for (int i=0; i<vNums.size(); i++){
         printf("Vector[%d]: %d\n", i, vNums[i]);
     }
+
+    WaitForInput();
 
     return 0;
 }

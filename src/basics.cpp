@@ -7,6 +7,7 @@
 #include <numeric> // Import working with sequences of values
 #include <ctime> // Import working with time
 #include <cmath> // Import math functions
+#include "../inc/TestHeader.h"
 
 using namespace std;
 
@@ -22,7 +23,7 @@ int main(int argc, char** argv) {
 	cout << "Hello World!" << endl; // << is the stream insertion operator
 	// cout is the stream, endl issues a new line and writes to the console
 
-	// Written like this if there was to std namespace
+	// Written like this if we were not using std namespace
 //	std::cout << "Hello World!" << endl;
 
     bool married = false;
@@ -48,6 +49,8 @@ int main(int argc, char** argv) {
     cout << "int Byte : " << sizeof(int) << endl; // sizeof returns how many bytes are used
 
     printf("%c %d %5d %.3f %s\n", 'A', 10, 5, 3.1234, "Hi"); // %5d puts 5 spaces to the left of the int
+
+    WaitForInput();
 
 	return 0;
 }
