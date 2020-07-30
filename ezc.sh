@@ -9,7 +9,7 @@ cd ./build
 
 # List of all cpp file names.
 files=("basics" "strings" "conditionals" "pointers"
-	"loops" "functions")
+	"loops" "functions" "exceptions")
 
 # Filter commands.
 case "$1" in
