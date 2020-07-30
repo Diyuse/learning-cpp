@@ -8,8 +8,8 @@ fi
 cd ./build
 
 # List of all cpp file names.
-files=("basics" "strings" "conditionals" "loops"
-	"pointers")
+files=("basics" "strings" "conditionals" "pointers"
+	"loops" "functions")
 
 # Filter commands.
 case "$1" in

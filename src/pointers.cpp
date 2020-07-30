@@ -12,6 +12,12 @@
 using namespace std;
 
 int main(int argc, char** argv) {
+    int age = 33;
+    int* pAge = NULL;
+    pAge = &age;
+    cout << "Address: " << pAge << endl;
+    cout << "Value: " << *pAge << endl;
+
     // Array
     int arrnNums[10] = {1}; // size of array cannot change
     int arrnNums2[] = {1,2,3,4};
@@ -21,6 +27,8 @@ int main(int argc, char** argv) {
     cout << "1st Value: " << arrnNums3[0] << endl;
     int arrnNums4[2][2][2] = {{{1,2}, {3,4}}, {{5,6}, {7,8}}};
     cout << arrnNums4[0][1][1] << endl;
+    int* pIntArray = arrnNums2; // Can create pointer to array.
+    cout << "Address: " << pIntArray << endl; // Prints address to first item in array.
 
     // Vector, when we don't know the size of our array
     vector<int> vNums(2);
