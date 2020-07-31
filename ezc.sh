@@ -11,6 +11,10 @@ cd ./build
 files=("basics" "strings" "conditionals" "pointers"
 	"loops" "functions" "exceptions")
 
+# List for projects with multiple files.
+mFiles=('mf=("classes" "Shape" "Circle")' 
+	'mf=()')
+
 # Filter commands.
 case "$1" in
 	c)
@@ -18,6 +22,9 @@ case "$1" in
 		;;
 	a)
 		input="all"
+		;;
+	m)
+		input="multiple"
 		;;
 	*)
 		if (( $1 >= 0 && $1 <= ${#files[@]} ))
@@ -40,6 +47,17 @@ case "$input" in
 		for f in ${files[@]}; do
 			g++ ../src/$f.cpp ../src/WaitForInput.cpp -o $f
 		done
+		echo "Finished."
+		;;
+	multiple)
+		eval ${mFiles[$2]}
+		echo "Building ${mf[0]}"
+		cmand='g++'
+		for f in ${mf[@]}; do
+			cmand="$cmand ../src/$f.cpp"
+		done
+		cmand="$cmand ../src/WaitForInput.cpp -o ${mf[0]}"
+		$cmand
 		echo "Finished."
 		;;
 	*)

@@ -1,5 +1,10 @@
 #include "../inc/Shape.h"
 
+Shape::Shape() {
+    this->height = 0;
+    this->width = 0;
+}
+
 Shape::Shape(double length){
     this->height = length; // -> is pointer operator and is used to access fields or methods.
     this->width = length;
