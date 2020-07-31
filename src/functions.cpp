@@ -11,6 +11,7 @@
 
 using namespace std;
 
+// Function prototypes.
 double AddNumbers(double num1, double num2);
 
 void AssignAge(int age);
