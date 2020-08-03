@@ -8,8 +8,8 @@ fi
 cd ./build
 
 # List of all cpp file names.
-files=("basics" "strings" "conditionals" "pointers"
-	"loops" "functions" "exceptions" "abstractClasses")
+files=('basics' 'strings' 'conditionals' 'pointers' 'loops' 'functions' 
+	'exceptions' 'abstractClasses' 'structs')
 
 # List for projects with multiple files.
 mFiles=('mf=("classes" "Shape" "Circle")' 
