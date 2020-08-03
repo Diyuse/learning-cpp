@@ -9,7 +9,7 @@ cd ./build
 
 # List of all cpp file names.
 files=('basics' 'strings' 'conditionals' 'pointers' 'loops' 'functions' 
-	'exceptions' 'abstractClasses' 'structs')
+	'exceptions' 'abstractClasses' 'structs' 'operatorOverloading')
 
 # List for projects with multiple files.
 mFiles=('mf=("classes" "Shape" "Circle")' 
