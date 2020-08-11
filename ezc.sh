@@ -18,6 +18,9 @@ mFiles=('mf=("classes" "Shape" "Circle")'
 
 # Filter commands.
 case "$1" in
+	p)
+		input="print"
+		;;
 	c)
 		input="count"
 		;;
@@ -40,6 +43,13 @@ esac
 
 # Action given the correct input.
 case "$input" in
+	print)
+		COUNT=0
+		while [ $COUNT -lt ${#files[@]} ]; do
+			echo $COUNT-${files[$COUNT]}
+			let COUNT=$COUNT+1
+		done
+		;;
 	count)
 		echo "${#files[@]}"
 		;;
