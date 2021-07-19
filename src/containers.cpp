@@ -11,6 +11,8 @@
 #include <algorithm> // Need to include this for sort
 #include <deque>
 #include <iterator>
+#include <list>
+#include <forward_list>
 #include "../inc/TestHeader.h"
 
 using namespace std;
@@ -53,6 +55,24 @@ int main(int argc, char** argv){
     for(int &i: nums3){
         cout << i << endl;
     }
+
+    cout << endl;
+    // More on containers.
+    cout << "Deque assign" << endl;
+    cout << "Nums before assign" << endl;
+    cout << "Size: " << nums.size() << endl;
+    for(int i: nums){
+        cout << i << " ";
+    }
+    cout << endl;
+
+    nums.assign({11, 12}); // assign overwrites the deque.
+    cout << "Nums after assign" << endl;
+    cout << "Size: " << nums.size() << endl;
+    for(int i: nums){
+        cout << i << " ";
+    }
+    cout << endl;
 
     WaitForInput();
 
